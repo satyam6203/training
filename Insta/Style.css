@@ -1,0 +1,527 @@
+:root {
+    --insta-pink: #E4405F;
+    --insta-purple: #8A3AB9;
+    --insta-orange: #FCAF45;
+    --insta-yellow: #FFDC80;
+    --insta-blue: #0095F6;
+    --insta-dark: #262626;
+    --insta-gray: #8E8E8E;
+    --insta-light-gray: #FAFAFA;
+    --insta-border: #DBDBDB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--insta-light-gray);
+    height: 100vh;
+    width: 100vw;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+/* Mobile Header */
+.insta-header {
+    display: none;
+}
+
+/* Profile Sidebar */
+.profile {
+    height: 100vh;
+    width: 30vw;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    border-right: 1px solid var(--insta-border);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.profile-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+    background-image: url("https://img.freepik.com/premium-vector/man-avatar-profile-picture-isolated-background-avatar-profile-picture-man_1293239-4866.jpg");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    background: linear-gradient(45deg, var(--insta-pink), var(--insta-purple), var(--insta-orange), var(--insta-yellow));
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--insta-dark);
+    margin-bottom: 5px;
+}
+
+.username {
+    color: var(--insta-gray);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.follow, .followr {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+.follow {
+    font-weight: 500;
+    color: var(--insta-dark);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.followr {
+    font-weight: 700;
+    color: var(--insta-dark);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.highlite {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid var(--insta-border);
+    overflow: hidden;
+}
+
+.highlite > p {
+    font-weight: 600;
+    color: var(--insta-dark);
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.hig-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.hig {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCAF45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.hig-inner {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hig:nth-child(1) .hig-inner {
+    background-image: url("https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+
+.hig:nth-child(2) .hig-inner {
+    background-image: url("https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+
+.hig:nth-child(3) .hig-inner {
+    background-image: url("https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+
+.hig:nth-child(4) .hig-inner {
+    background-image: url("https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+
+.nav {
+    height: 100vh;
+    width: 70vw;
+    margin-left: 30vw;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.nav::-webkit-scrollbar {
+    width: 6px;
+}
+
+.nav::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.nav::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.nav::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.storis {
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    overflow-y: auto;
+}
+
+.storis::-webkit-scrollbar {
+    display: none;
+}
+
+.circle {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url("https://img.freepik.com/premium-vector/man-avatar-profile-picture-isolated-background-avatar-profile-picture-man_1293239-4866.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid white;
+    position: relative;
+    border: 2px solid red;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--insta-pink), var(--insta-purple), var(--insta-orange));
+    z-index: -1;
+}
+
+.circle:hover {
+    transform: scale(1.05);
+}
+
+.active-story::after {
+    background: linear-gradient(45deg, #7CFC00, #32CD32, #00FF00);
+}
+
+.new-story::after {
+    background: linear-gradient(45deg, #FF0000, #FF4500, #FF6347);
+}
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    overflow-y: hidden;
+}
+
+.post1 {
+    height: 480px;
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.post-header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.post-logo {
+    height: 35px;
+    width: 35px;
+    background-image: url("https://m.media-amazon.com/images/I/51Jeu+ot7EL._AC_UF1000,1000_QL80_.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid var(--insta-border);
+    overflow: hidden;
+}
+
+.post-header p {
+    font-weight: 600;
+    color: var(--insta-dark);
+    font-size: 14px;
+}
+
+.poimg {
+    height: 400px;
+    width: 100%;
+    background-image: url("https://m.media-amazon.com/images/I/51Jeu+ot7EL._AC_UF1000,1000_QL80_.jpg");
+    background-size: cover;
+    background-position: center;
+    /* border: 10px solid white; */
+    border-left:20px solid white;
+    /* border-radius: 10px; */
+    border-right: 20px solid white;
+    overflow: hisdden;
+}
+
+.img2 {
+    background-image: url('https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYTdiMGIzNmIwLTRlOTktMTFlZi1iY2VhLWU1MDI2ZDljNzJmMi5qcGc=');
+}
+
+.img3 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg');
+}
+
+.img4 {
+    background-image: url('https://s.france24.com/media/display/451ed2b8-eed6-11ea-afdd-005056bf87d6/w:1280/p:16x9/messi-1805.jpg');
+}
+
+.img5 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu_15_f7J5mFNuypGl9BIPUYeKOpSd7dw6F9saW4a2nfiIhLxbvVDVYXHrBKvblHB9QbL8f6y2RmVrE-p4WdsJ3kpF6FDi1oSEidjVO60&s=10');
+}
+
+.img6 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Hr1U0srWAQvQpRJkB4PgO_y33x7eqiH7XUIkf29-Zd5-PHmqIwSPJZaA063bQ2nrwYO8zQ1bQP7wKzTUw4pwRpSpo3zRdZg8rLi_5Q&s=10');
+}
+
+.dis {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.btn {
+    height: 36px;
+    width: 90px;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background-color: var(--insta-light-gray);
+    transform: scale(1.05);
+}
+
+.like-btn:hover {
+    color: #ED4956;
+}
+
+.comment-btn:hover {
+    color: var(--insta-blue);
+}
+
+.share-btn:hover {
+    color: #0F9D58;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .profile {
+        width: 25vw;
+    }
+    
+    .nav {
+        width: 75vw;
+        margin-left: 25vw;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        overflow-y: auto;
+    }
+    
+    .wrapper {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    
+    .insta-header {
+        display: flex;
+        height: 60px;
+        width: 100%;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        border-bottom: 1px solid var(--insta-border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        overflow: hidden;
+    }
+    
+    .insta-header h2 {
+        font-family: 'Poppins', cursive;
+        background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCAF45);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 24px;
+    }
+    
+    .header-icons {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .header-icons i {
+        font-size: 22px;
+        color: var(--insta-dark);
+        cursor: pointer;
+    }
+    
+    .profile {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        border-right: none;
+        border-bottom: 1px solid var(--insta-border);
+        overflow: hidden;
+    }
+    
+    .profile-main {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        width: auto;
+    }
+    
+    .logo {
+        height: 80px;
+        width: 80px;
+        margin-bottom: 0;
+    }
+    
+    .highlite {
+        display: none;
+    }
+    
+    .nav {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 10px;
+        overflow-y: auto;
+    }
+    
+    .follow, .followr {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .post {
+        justify-content: center;
+    }
+    
+    .post1 {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .storis {
+        height: 100px;
+    }
+    
+    .circle {
+        height: 60px;
+        width: 60px;
+    }
+}

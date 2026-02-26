@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(16,14,14);
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0));
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    height: 55px;
+}
+.centeritem{
+    display: flex;
+    gap: 30px;
+    color: white;
+    font-size: 14px;
+}
+.logos{
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-size: 16px;
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+.hamburger span{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 20px 20px;
+}
+.video-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+}
+.video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-overlay{
+    position: absolute;
+    inset: 0;
+    /* background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.2)); */
+    color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+}
+.video-overlay h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.video-overlay p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.button-group{
+    display: flex;
+    gap:20px;
+    height: 20%;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.button-group button{
+    padding: 10px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 50%;
+    width: 20%;
+    background-color: rgb(235, 197, 197);
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.glass{
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.241);
+    
+}
+
+.video-section{
+    height: 30vh;
+    width: 100%;
+    color: #fafafa;
+    margin-top: -10%;
+    z-index: 9999;
+}
+.video-section h1{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.popular-videos-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    align-items: center;
+}
+.videos{
+    height: 300px;
+    width: 300px;
+    /* background-color: red; */
+    flex-shrink: 0;
+    border-radius: 30px;
+    background-size: cover;
+    object-fit: cover;
+}
+.videos img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    background-size: cover;
+    object-fit: cover;
+}
+.more-videos{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.more-video-section{
+    height: 30vh;
+    width: 100%;
+    color: #fafafa;
+    margin-bottom: 100px;
+    z-index: 9999;
+}
+.more-video-section h1{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+footer{
+    color: red;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px;
+}
+input{
+    height: 50px;
+    width: 400px;
+    /* border: none; */
+    gap:10px;
+    padding-left:15px;
+    background-color: rgba(0, 0, 0, 0.217);
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.btn{
+    height: 50px;
+    width: 150px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    cursor: pointer;
+    scale: 0.95;
+    background-color: rgba(255, 0, 0, 0.714);
+}
+.inp{
+    /* gap: 20px; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+.inp div{
+    gap:20px;
+}
+.text{
+    display: flex;
+    align-items: start;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
+    /* color: white; */
+}
+.links{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.links div{
+    height: 100%;
+    width: 33%;
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap:10px;
+}
+.links a{
+    color: white;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+        height: 8vh;
+    }
+    
+    nav img {
+        height: 40px;
+    }
+    
+    .centeritem {
+        gap: 15px;
+        font-size: 12px;
+    }
+    
+    .logos {
+        gap: 15px;
+        font-size: 14px;
+    }
+    
+    .hero {
+        padding: 70px 15px 15px;
+    }
+    
+    .video-overlay {
+        width: 70%;
+        padding: 40px;
+        gap: 8px;
+    }
+    
+    .video-overlay h1 {
+        font-size: 36px;
+    }
+    
+    .video-overlay p {
+        font-size: 12px;
+    }
+    
+    .button-group button {
+        padding: 8px 20px;
+        font-size: 14px;
+        width: 25%;
+        height: 45px;
+    }
+    
+    .videos {
+        height: 250px;
+        width: 250px;
+    }
+    
+    .more-video-section {
+        height: 25vh;
+    }
+    
+    .more-video-section h1 {
+        font-size: 20px;
+    }
+    
+    input {
+        width: 80%;
+        height: 45px;
+        padding-left: 12px;
+    }
+    
+    .btn {
+        height: 45px;
+        width: 120px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    nav {
+        padding: 0 15px;
+        height: 7vh;
+    }
+    
+    nav img {
+        height: 30px;
+    }
+    
+    .centeritem {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .logos {
+        gap: 10px;
+        font-size: 12px;
+    }
+    
+    .wrapper {
+        height: auto;
+    }
+    
+    .hero {
+        height: auto;
+        min-height: 60vh;
+        padding: 60px 12px 12px;
+    }
+    
+    .video-container {
+        border-radius: 15px;
+    }
+    
+    .video-overlay {
+        width: 100%;
+        padding: 30px 20px;
+        gap: 6px;
+        justify-content: center;
+    }
+    
+    .video-overlay h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    
+    .video-overlay p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+    
+    .video-overlay p:nth-of-type(3) {
+        display: none;
+    }
+    
+    .video-overlay p:nth-of-type(4) {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: 10px;
+    }
+    
+    .button-group {
+        height: auto;
+        gap: 10px;
+        padding-top: 20px;
+    }
+    
+    .button-group button {
+        padding: 10px 20px;
+        font-size: 12px;
+        width: auto;
+        height: 38px;
+        border-radius: 25px;
+    }
+    
+    .button-group button i {
+        font-size: 11px;
+    }
+    
+    .more-video-section {
+        height: auto;
+        min-height: 25vh;
+        margin-bottom: 50px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    
+    .more-video-section h1 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+    
+    .popular-videos-section {
+        gap: 8px;
+        margin: 0 -12px;
+        padding: 0 12px;
+    }
+    
+    .videos {
+        height: 180px;
+        width: 140px;
+    }
+    
+    .more-videos {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+    footer {
+        min-height: auto;
+        padding: 50px 20px;
+        gap: 15px;
+    }
+    
+    input {
+        width: 100%;
+        height: 42px;
+        padding-left: 12px;
+        font-size: 14px;
+    }
+    
+    .btn {
+        height: 42px;
+        width: 100%;
+        font-size: 12px;
+    }
+    
+    .inp {
+        flex-direction: column;
+    }
+    
+    .links {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .links div {
+        width: 100%;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .links a {
+        font-size: 12px;
+    }
+}
+
+/* Extra small phones (320px and below) */
+@media (max-width: 320px) {
+    nav img {
+        height: 25px;
+    }
+    
+    .hero {
+        min-height: 50vh;
+        padding: 50px 10px 10px;
+    }
+    
+    .video-overlay {
+        padding: 20px 15px;
+        gap: 5px;
+    }
+    
+    .video-overlay h1 {
+        font-size: 18px;
+    }
+    
+    .videos {
+        height: 150px;
+        width: 120px;
+    }
+    
+    .button-group button {
+        padding: 8px 15px;
+        font-size: 11px;
+        height: 32px;
+    }
+}
