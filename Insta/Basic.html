@@ -3,160 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram UI | Satyam</title>
-    <link rel="stylesheet" href="/Style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="insta-header">
-        <h2>Instagram</h2>
-        <div class="header-icons">
-            <i class="far fa-heart"></i>
-            <i class="far fa-paper-plane"></i>
-        </div>
-    </div>
-    
     <div class="wrapper">
-        <div class="profile">
-            <div class="insta-header">
-                <h2>Instagram</h2>
-                <div class="header-icons">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-paper-plane"></i>
+        <div class="instacontainer">
+            <div class="left">
+                <div class="lefttop">
+                    <div class="instalogo">
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <p>Instagram</p>
+                    </div>
+                </div>
+                <div class="leftmid">
+                    <div class="profile">
+                        <div class="photo">
+                            <img src="" alt="">
+                        </div>
+                        <h1>Satyam Singh</h1>
+                        <h4>@Satyam</h4>
+                    </div>
+                    <div class="stats">
+                        <div>
+                            <p>Post</p>
+                            <p>10k</p>
+                        </div>
+                        <div>
+                            <p>Likes</p>
+                            <p>100K</p>
+                        </div>
+                        <div>
+                            <p>Views</p>
+                            <p>10M</p>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <p>Satyam</p>
+                        <p>Backend Developer | Java Enthusiast</p>
+                    </div>
+                </div>
+                <div class="leftbottom">
+                    <a href="">
+                        <i class="fa-solid fa-house"></i>
+                        HOME
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-video"></i>
+                        FEED
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-message"></i>
+                        MESSAGES
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-gear"></i>
+                        SETTINGS
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        SIGN_OUT
+                    </a>
                 </div>
             </div>
-            <div class="profile-main">
-                <div class="logo"></div>
-                <div class="profile-info">
-                    <h1>Satyam</h1>
-                    <p class="username">@satyam</p>
-                    <div class="follow">
-                        <p>post |</p>
-                        <p>follow |</p>
-                        <p>Likes</p>
+            <div class="right">
+                <div class="topnav">
+                    <div class="topnavleft">
+                        <div class="input">
+                            <i class="fa fa-search"></i>
+                            <input class="textsearch">
+                        </div>
                     </div>
-                    <div class="followr">
-                        <p>100 </p>
-                        <p>10K </p>
-                        <p>1000</p>
+                    <div class="topnavright">
+                        <i class="fa-regular fa-bell"></i>
+                        <i class="fa-regular fa-message"></i>
+                        <button>+ Create Post</button>
                     </div>
                 </div>
-            </div>
-            <div class="highlite">
-                <p>Satyam Singh</p>
-                <div class="hig-container">
-                    <div class="hig">
-                        <div class="hig-inner"></div>
-                    </div>
-                    <div class="hig">
-                        <div class="hig-inner"></div>
-                    </div>
-                    <div class="hig">
-                        <div class="hig-inner"></div>
-                    </div>
-                    <div class="hig">
-                        <div class="hig-inner"></div>
+                <div class="bottomnav">
+                    <p>Stories</p>
+                    <div class="storiescontainer">
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
+                        <div class="storycontainer">
+                            <div class="storycircle">
+                                <img src="https://plus.unsplash.com/premium_photo-1682096252599-e8536cd97d2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="No Image">
+                            </div>
+                            <p>Text</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="nav">
-            <div class="storis">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle active-story"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle new-story"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle new-story"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-            
-            <div class="post">
-                <div class="post1">
-                    <div class="post-header">
-                        <div class="post-logo"></div>
-                        <p>@Virat Kohli</p>
-                    </div>
-                    <div class="poimg"></div>
-                    <div class="dis">
-                        <button class="btn like-btn"><i class="far fa-heart"></i> Like</button>
-                        <button class="btn comment-btn"><i class="far fa-comment"></i> Comment</button>
-                        <button class="btn share-btn"><i class="fas fa-share"></i> Share</button>    
-                    </div>
-                </div>
-                
-                <div class="post1">
-                    <div class="post-header">
-                        <div class="post-logo"></div>
-                        <p>@Anushka</p>
-                    </div>
-                    <div class="poimg img2"></div>
-                    <div class="dis">
-                        <button class="btn like-btn"><i class="far fa-heart"></i> Like</button>
-                        <button class="btn comment-btn"><i class="far fa-comment"></i> Comment</button>
-                        <button class="btn share-btn"><i class="fas fa-share"></i> Share</button>    
-                    </div>
-                </div>
-                
-                <div class="post1">
-                    <div class="post-header">
-                        <div class="post-logo"></div>
-                        <p>@Cristiano</p>
-                    </div>
-                    <div class="poimg img3"></div>
-                    <div class="dis">
-                        <button class="btn like-btn"><i class="far fa-heart"></i> Like</button>
-                        <button class="btn comment-btn"><i class="far fa-comment"></i> Comment</button>
-                        <button class="btn share-btn"><i class="fas fa-share"></i> Share</button>    
-                    </div>
-                </div>
-                
-                <div class="post1">
-                    <div class="post-header">
-                        <div class="post-logo"></div>
-                        <p>@Messi</p>
-                    </div>
-                    <div class="poimg img4"></div>
-                    <div class="dis">
-                        <button class="btn like-btn"><i class="far fa-heart"></i> Like</button>
-                        <button class="btn comment-btn"><i class="far fa-comment"></i> Comment</button>
-                        <button class="btn share-btn"><i class="fas fa-share"></i> Share</button>    
-                    </div>
-                </div>
-                
-                <div class="post1">
-                    <div class="post-header">
-                        <div class="post-logo"></div>
-                        <p>@Sachin</p>
-                    </div>
-                    <div class="poimg img5"></div>
-                    <div class="dis">
-                        <button class="btn like-btn"><i class="far fa-heart"></i> Like</button>
-                        <button class="btn comment-btn"><i class="far fa-comment"></i> Comment</button>
-                        <button class="btn share-btn"><i class="fas fa-share"></i> Share</button>    
-                    </div>
-                </div>
-                
-                <div class="post1">
-                    <div class="post-header">
-                        <div class="post-logo"></div>
-                        <p>@Dhoni</p>
-                    </div>
-                    <div class="poimg img6"></div>
-                    <div class="dis">
-                        <button class="btn like-btn"><i class="far fa-heart"></i> Like</button>
-                        <button class="btn comment-btn"><i class="far fa-comment"></i> Comment</button>
-                        <button class="btn share-btn"><i class="fas fa-share"></i> Share</button>    
+                <div class="feedsection">
+                    <p>Feeds</p>
+                    <div class="postcontainer">
+                        <div class="posts">
+                            <div class="pfp">
+                                <div class="cir"></div>
+                                <h1>harshcodr</h1>
+                            </div>
+                            <div class="post-image">
+                                <img src="https://plus.unsplash.com/premium_photo-1768396820015-f9faa1613cba?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            </div>
+                            <div class="engagement-section">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-comment"></i>
+                                <i class="fa-solid fa-share-from-square"></i>
+                            </div>
+                            <div class="caption">
+                                <p>cool weather</p>
+                            </div>
+                        </div>
+                        <div class="posts">
+                            <div class="pfp">
+                                <div class="cir"></div>
+                                <h1>harshcodr</h1>
+                            </div>
+                            <div class="post-image">
+                                <img src="https://plus.unsplash.com/premium_photo-1768396820015-f9faa1613cba?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            </div>
+                            <div class="engagement-section">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-comment"></i>
+                                <i class="fa-solid fa-share-from-square"></i>
+                            </div>
+                            <div class="caption">
+                                <p>cool weather</p>
+                            </div>
+                        </div>
+                        <div class="posts">
+                            <div class="pfp">
+                                <div class="cir"></div>
+                                <h1>harshcodr</h1>
+                            </div>
+                            <div class="post-image">
+                                <img src="https://plus.unsplash.com/premium_photo-1768396820015-f9faa1613cba?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            </div>
+                            <div class="engagement-section">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-comment"></i>
+                                <i class="fa-solid fa-share-from-square"></i>
+                            </div>
+                            <div class="caption">
+                                <p>cool weather</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
